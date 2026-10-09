@@ -1,0 +1,12 @@
+<section id="vista-inventario" class="vista">
+        <div class="titulo-vista"><span class="etiqueta-seccion">INVENTARIO</span><h2>Inventario en tiempo real</h2><p>Las cantidades se actualizan automáticamente al registrar ingresos y pérdidas.</p></div>
+        <div class="mini-estadisticas">
+          <div class="mini-card"><span>Total de productos</span><strong id="invTotal">0</strong></div>
+          <div class="mini-card"><span>Unidades disponibles</span><strong id="invUnidades">0</strong></div>
+          <div class="mini-card"><span>Productos críticos</span><strong id="invCriticos">0</strong></div>
+        </div>
+        <article class="panel">
+          <div class="encabezado-panel"><div><span class="etiqueta-seccion">EXISTENCIAS</span><h3>Inventario general</h3></div><button class="boton-secundario" onclick="mostrarVista('sincronizacion')">Sincronizar →</button></div>
+          <div class="tabla-contenedor"><table class="tabla"><thead><tr><th>Alimento</th><th>Categoría</th><th>Existencias</th><th>Vencimiento</th><th>Sede</th><th>Estado</th></tr></thead><tbody id="tablaInventario"></tbody></table></div>
+        </article>
+      </section>

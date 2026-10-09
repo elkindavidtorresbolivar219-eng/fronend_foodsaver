@@ -1,0 +1,14 @@
+<section id="vista-reportes" class="vista">
+        <div class="titulo-vista"><span class="etiqueta-seccion">GENERACIÓN DE REPORTES ALIMENTARIOS</span><h2>Reportes del sistema</h2><p>Reportes diarios, inventario general, pérdidas y consumo.</p></div>
+        <article class="panel">
+          <div class="encabezado-panel"><div><span class="etiqueta-seccion">REPORTES</span><h3>Generar informe</h3></div></div>
+          <div class="panel-form">
+            <div class="form-grid">
+              <div class="campo"><label>Tipo de reporte</label><select id="tipoReporte"><option>Reporte diario</option><option>Inventario general</option><option>Pérdida de alimentos</option><option>Consumo</option><option>Informe de operaciones contables</option></select></div>
+              <div class="campo"><label>Fecha</label><input id="fechaReporte" type="date"></div>
+            </div>
+            <div class="acciones"><button class="boton-principal" onclick="generarReporte()">Generar reporte</button><button class="boton-secundario" onclick="window.print()">Imprimir</button></div>
+            <div id="resultadoReporte" class="reporte-box"><h4>Resultado</h4><p>Seleccione un tipo de reporte y pulse “Generar reporte”.</p></div>
+          </div>
+        </article>
+      </section>

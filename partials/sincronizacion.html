@@ -1,0 +1,18 @@
+<section id="vista-sincronizacion" class="vista">
+        <div class="titulo-vista"><span class="etiqueta-seccion">SINCRONIZACIÓN DE INVENTARIO</span><h2>Estado de sincronización</h2><p>Actualización de información y comunicación entre sedes.</p></div>
+        <div class="modulo-grid">
+          <article class="panel panel-form">
+            <div class="encabezado-panel"><div><span class="etiqueta-seccion">4.1</span><h3>Sincronizar información</h3></div></div>
+            <div style="padding:22px;">
+              <div class="estado-sync"><span class="punto-sync" id="puntoSync"></span><span id="estadoSync">Información sincronizada</span></div>
+              <p id="ultimaSync" style="color:#777481;font-size:9px;margin-top:12px;">Sincronización pendiente.</p>
+              <div class="acciones"><button class="boton-principal" onclick="sincronizar()">Sincronizar ahora</button></div>
+              <div id="mensajeSync" class="mensaje"></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="encabezado-panel"><div><span class="etiqueta-seccion">4.2</span><h3>Interconexión de sedes</h3></div></div>
+            <div class="tabla-contenedor"><table class="tabla"><thead><tr><th>Sede</th><th>Estado</th><th>Última actualización</th></tr></thead><tbody id="tablaSedes"></tbody></table></div>
+          </article>
+        </div>
+      </section>

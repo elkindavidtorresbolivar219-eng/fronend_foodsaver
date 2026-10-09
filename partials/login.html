@@ -1,0 +1,49 @@
+<!-- LOGIN: RF 1, 1.1, 1.2, 1.4 -->
+  <section id="pantallaLogin" class="login-pantalla">
+    <div class="login-caja">
+      <img src="img/logo3.png" alt="Logo Meraki" class="login-logo">
+      <h1>Iniciar sesión</h1>
+      <p>Sistema de Gestión Alimentaria</p>
+
+      <form id="formLogin">
+
+
+        <div class="campo">
+          <label for="loginUsuario">Usuario</label>
+          <input id="loginUsuario" type="text" autocomplete="username" required placeholder="Ingrese su usuario">
+        </div>
+
+
+        <div class="campo">
+          <label for="loginClave">Contraseña</label>
+          <input id="loginClave" type="password" autocomplete="current-password" required placeholder="Ingrese su contraseña">
+        </div>
+
+        <button class="boton-principal" type="submit" style="width:100%;margin-top:8px;">Ingresar</button>
+        <div id="mensajeLogin" class="mensaje"></div>
+      </form>
+
+      <div class="login-ayuda">
+        <button class="enlace-boton" type="button" id="btnRestablecer">Restablecer contraseña</button>
+        <span style="color:#686572;font-size:8px;">Demo: admin / 1234</span>
+      </div>
+
+      <form id="formRestablecer" class="oculto" style="margin-top:18px;">
+
+        <div class="campo">
+          <label for="recUsuario">Usuario</label>
+          <input id="recUsuario" type="text" required>
+        </div>
+
+
+        <div class="campo">
+          <label for="recNuevaClave">Nueva contraseña</label>
+          <input id="recNuevaClave" type="password" minlength="4" required>
+        </div>
+
+        <button class="boton-secundario" type="submit">Guardar nueva contraseña</button>
+        <div id="mensajeReset" class="mensaje"></div>
+
+      </form>
+    </div>
+  </section>

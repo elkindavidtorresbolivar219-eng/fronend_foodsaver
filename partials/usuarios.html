@@ -1,0 +1,27 @@
+<section id="vista-usuarios" class="vista">
+        <div class="titulo-vista"><span class="etiqueta-seccion">GESTIÓN DE USUARIOS</span><h2>Usuarios del sistema</h2><p>Creación, modificación, eliminación e informes de usuarios.</p></div>
+        <div class="modulo-grid">
+          <article class="panel panel-form">
+            <div class="encabezado-panel"><div><span class="etiqueta-seccion">2.1 / 2.2</span><h3>Crear o modificar usuario</h3></div></div>
+            <form id="formUsuario" style="padding-top:18px;">
+              <input type="hidden" id="usuarioId">
+              <div class="form-grid">
+                <div class="campo"><label>Nombre completo</label><input id="usuarioNombre" required></div>
+                <div class="campo"><label>Usuario</label><input id="usuarioLogin" required></div>
+                <div class="campo"><label>Contraseña</label><input id="usuarioClave" type="password" minlength="4" required></div>
+                <div class="campo"><label>Rol</label><select id="usuarioRol"><option>Administrador</option><option>Operador</option><option>Contador</option><option>Consulta</option></select></div>
+              </div>
+              <div class="acciones"><button class="boton-principal" type="submit">Guardar usuario</button><button class="boton-secundario" type="button" onclick="limpiarUsuario()">Limpiar</button></div>
+              <div id="mensajeUsuario" class="mensaje"></div>
+            </form>
+          </article>
+          <article class="panel">
+            <div class="encabezado-panel"><div><span class="etiqueta-seccion">2.3</span><h3>Usuarios registrados</h3></div></div>
+            <div class="tabla-contenedor"><table class="tabla"><thead><tr><th>Nombre</th><th>Usuario</th><th>Rol</th><th>Acciones</th></tr></thead><tbody id="tablaUsuarios"></tbody></table></div>
+          </article>
+        </div>
+        <article class="panel" style="margin-top:20px;">
+          <div class="encabezado-panel"><div><span class="etiqueta-seccion">2.4</span><h3>Informe de usuarios</h3></div><button class="boton-secundario" onclick="generarInformeUsuarios()">Generar informe</button></div>
+          <div id="informeUsuarios" class="panel-form"></div>
+        </article>
+      </section>

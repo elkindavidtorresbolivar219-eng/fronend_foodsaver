@@ -1,0 +1,29 @@
+<section id="vista-contabilidad" class="vista">
+        <div class="titulo-vista"><span class="etiqueta-seccion">MOVIMIENTOS CONTABLES</span><h2>Contabilidad</h2><p>Ganancias, gastos operativos y registro de operaciones.</p></div>
+        <div class="modulo-grid">
+          <article class="panel panel-form">
+            <div class="encabezado-panel"><div><span class="etiqueta-seccion">5.3</span><h3>Registrar operación contable</h3></div></div>
+            <form id="formContable" style="padding:18px 22px;">
+              <div class="form-grid">
+                <div class="campo"><label>Tipo</label><select id="contableTipo"><option>Venta</option><option>Gasto operativo</option></select></div>
+                <div class="campo"><label>Valor</label><input id="contableValor" type="number" min="0" required></div>
+                <div class="campo form-full"><label>Descripción</label><input id="contableDescripcion" required placeholder="Descripción de la operación"></div>
+              </div>
+              <div class="acciones"><button class="boton-principal" type="submit">Registrar operación</button></div>
+              <div id="mensajeContable" class="mensaje"></div>
+            </form>
+          </article>
+          <article class="panel">
+            <div class="encabezado-panel"><div><span class="etiqueta-seccion">5.1 / 5.2</span><h3>Resumen financiero</h3></div></div>
+            <div class="mini-estadisticas" style="padding:18px 18px 0;">
+              <div class="mini-card"><span>Ganancias por ventas</span><strong id="totalVentas">$0</strong></div>
+              <div class="mini-card"><span>Gastos operativos</span><strong id="totalGastos">$0</strong></div>
+              <div class="mini-card"><span>Balance</span><strong id="balance">$0</strong></div>
+            </div>
+          </article>
+        </div>
+        <article class="panel" style="margin-top:20px;">
+          <div class="encabezado-panel"><div><span class="etiqueta-seccion">OPERACIONES</span><h3>Registro contable</h3></div></div>
+          <div class="tabla-contenedor"><table class="tabla"><thead><tr><th>Fecha</th><th>Tipo</th><th>Descripción</th><th>Valor</th></tr></thead><tbody id="tablaContabilidad"></tbody></table></div>
+        </article>
+      </section>
